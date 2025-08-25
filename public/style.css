@@ -1,0 +1,104 @@
+body {
+  color-scheme: dark;
+}
+
+.custom-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.2s;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.5em #646cffaa);
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-dual-ring {
+  /* change color here */
+  color: #26839f;
+}
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Circle Avatar Styles */
+.avatar {
+  line-height: 0; /* remove line-height */
+  display: inline-block; /* circle wraps image */
+  margin: 5px;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%; /* relative value */
+  /*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+  transition: linear 0.25s;
+  height: 100px;
+  width: 100px;
+}
+.avatar img {
+  border-radius: 50%; /* relative value for
+				   adjustable image size */
+}
+.avatar:hover {
+  transition: ease-out 0.2s;
+  border: 4px solid rgba(200, 200, 200, 0.4);
+  -webkit-transition: ease-out 0.2s;
+}
+a.avatar {
+  color: transparent;
+} /* IE fix: removes blue border */
+
+.avatar-wrapper {
+  position: relative;
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+.session-list-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.session-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.session-list-bin {
+  cursor: pointer;
+}
+
+.session-list-bin:hover {
+  transform: scale(1.2);
+  transition: all 0.2s;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.5em #646cffaa);
+}

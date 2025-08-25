@@ -1,0 +1,7 @@
+article(style="width:100%")
+    if (user.avatarURL)
+        div(class="avatar-wrapper")
+            img(src=user.avatarURL class="avatar")
+    h2=user.name
+    p=user.email
+    em=`${user.isAdmin? "Admin": "Regular"}`
